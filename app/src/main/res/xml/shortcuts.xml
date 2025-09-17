@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Start exercise -->
+    <shortcut
+        android:enabled="false"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutId = "active_tasks">
+        <capability-binding
+            android:key="action.intent.OPEN_APP_FEATURE">
+            <parameter-binding
+                android:key = "feature"
+                android:value = "@array/active_tasks_synonyms" />
+        </capability-binding>
+    </shortcut>
+
+    <capability android:name="actions.intent.OPEN_APP_FEATURE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.example.fitnessdemo"
+            android:targetClass="com.example.fitnessdemo.ui.MainActivity">
+            <url-template android:value="fitnessdemo://task"/>
+            <parameter
+                android:name="feature"
+                android:key="feature"/>
+        </intent>
+    </capability>
+
+</shortcuts>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <array name="active_tasks_synonyms">
+        <item>buy food</item>
+        <item>buy lunch</item>
+    </array>
+
+    <array name="completed_tasks_synonyms">
+        <item>completed grocery</item>
+        <item>completed shopping</item>
+    </array>
+
+</resources>
